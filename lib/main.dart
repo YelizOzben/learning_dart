@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
+// 2.01.41
+String getFullName(String firstName, String lastName) {
+  return firstName + ' ' + lastName;
+}
 
+void printMyName(){
+  // void is a keyword. Not returning anything.
+}
 void main() {
   runApp(const MyApp());
-  print("1.37.28");
 }
 
 class MyApp extends StatelessWidget {
@@ -11,6 +17,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    print(getFullName('Yeliz', 'Özben'));
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
